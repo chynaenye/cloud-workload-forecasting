@@ -4,7 +4,13 @@ Forecasts the number of active VMs and the aggregate CPU utilization for the las
 
 ## Description
 
-Companies that use cloud providers such as Microsoft Azure and Amazon Web Services (AWS) rent computing resources to run their applications. One of these resources is a Virtual Machine (VM), which is a software-based computer that provides processing power for applications and services.Managing these resources requires balancing computing capacity with demand. Too few available VMs can leave applications without sufficient resources to handle workload demands, potentially affecting performance and service availability. Too many VMs, on the other hand, can result in unused computing capacity and unnecessary costs. This project explores how predictable cloud workloads are by forecasting two metrics over a two-hour period: the number of active Virtual Machines (Active VM Count) and their average CPU utilization (Aggregate CPU Utilization). CPU utilization indicates how busy the processors are, expressed as a percentage of their capacity.The aim is to evaluate whether these workload metrics can be accurately forecast using historical observations.
+Companies that use cloud providers such as Microsoft Azure and Amazon Web Services (AWS) rent computing resources to run their applications. One of these resources is a Virtual Machine (VM), which is a software-based computer that provides processing power for applications and services.
+
+Managing these resources requires balancing computing capacity with demand. Too few available VMs can leave applications without sufficient resources to handle workload demands, potentially affecting performance and service availability. Too many VMs, on the other hand, can result in unused computing capacity and unnecessary costs. 
+
+This project explores how predictable cloud workloads are by forecasting two metrics over a two-hour period: the number of active Virtual Machines (Active VM Count) and their average CPU utilization (Aggregate CPU Utilization). CPU utilization indicates how busy the processors are, expressed as a percentage of their capacity.
+
+The aim is to evaluate whether these workload metrics can be accurately forecast using historical observations.
 
 Full findings are in `reports/final_report.md`.
 
@@ -18,7 +24,7 @@ Full findings are in `reports/final_report.md`.
 ### Installing
 
 ```bash
-git clone <<YOUR INPUT: repo URL>>
+git clone https://github.com/chynaenye/cloud-workload-forecasting
 cd cloud-workload-forecasting
 python -m venv .venv
 # Windows PowerShell: .venv\Scripts\Activate.ps1
@@ -127,5 +133,5 @@ If you get a file not found error, check that the data files are inside the data
 
 ## Acknowledgments
 
-* Microsoft Azure Public Dataset V2 (challenge subset `data-v1`)
+* Microsoft Azure Public Dataset V2 (`data-v1`)
 * Atomity HQ
